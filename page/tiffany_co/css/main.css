@@ -462,8 +462,8 @@ main .container_wrap .main_icon .mv_number {
 .web_award .award_l {
   width: 50%;
   float: left;
-  background-image: url(../images/main_img_1.jpg);
-  height: 45vw;min-height: 300px;
+  background-image: url('/page/tiffany_co/images/main_img_1.jpg');
+  height: 45vw;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
