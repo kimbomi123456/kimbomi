@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KEDS</title>
+  <!DOCTYPE html>
+  <!-- css  -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- js쿼리 -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/gruntfile.js"></script>
+  <script src="js/countdown-timer.js"></script>
+
+  <!-- swiper 소스  -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+  <script src="js/jquery.lettering-0.6.1.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+
+  <!--scrollmagic-->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <!--gsap-->
+  <script src="cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <script src="cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+
+  <!--aos-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/f8a0a95034.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff​"></script>
+
+  <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+
+  <script src="js/countdown-timer.js"></script>
+  <script src="js/countdown-timer.min.js"></script>
+  <script src="js/custom_9.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <div class="hd_top">
+        <img src="images/hd_kakao_p.png" alt="" class="hd_img">
+        <span class="hd_span">카카오톡 플러스 친구 등록하면 3000원 할인쿠폰 !</span>
+        <img src="images/hd_kakao.png" alt="" class="hd_img">
+
+        <div class="closebtn">
+          <i class="fa-solid fa-x"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="hd_etc">
+      <div class="hd_bottom">
+        <h1 class="logo"><a href=""><img src="images/keds_logo.png" alt=""></a></h1>
+
+        <ul class="hd_ul">
+          <li><a href="">FAVORITES</a></li>
+          <li><a href="">FOOTWEAR</a></li>
+          <li><a href="">APPAREL</a></li>
+          <li><a href="">BAG</a></li>
+          <li><a href="">ACCESSORY</a></li>
+          <li><a href="">ABOUT</a></li>
+        </ul>
+
+        <div class="hd_icon">
+          <div class="img_wrap">
+            <img src="images/login_notext.png" alt="" class="lg_notext">
+            <span class="login_txt">Login</span>
+          </div>
+
+          <div class="img_wrap">
+            <img src="images/hd_cart.png" alt=""></div>
+          <div class="img_wrap">
+            <img src="images/search.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="main_vis">
+        <div class="main_img">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/main_vis1.jpg" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="images/main_vis1.jpg" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="images/main_vis1.jpg" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="images/main_vis1.jpg" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="images/main_vis1.jpg" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="images/main_vis1.jpg" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="images/main_vis1.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+      <!-- main_img 끝 -->
+      <!--타임딜 시작 -->
+      <div class="ts">
+        <div class="ts_inner">
+
+          <div class="ts_left">
+            <h2 class="area_title">Today Specals</h2>
+            <p class="today_txtp p">메이몬드 타임세일</p>
+            <div class="time_1">
+              <span class="br_sp">남은시간</span>
+              <span class="date">D-2</span>
+            </div>
+
+            <div class="timer" id="countdown"></div>
+
+          </div>
+
+          <div class="ts_left">
+            <img src="images/keds_prd1_5.jpg" alt="" class="prd_img">
+          </div>
+
+          <div class="ts_left">
+            <span class="date">SKIN CARE</span>
+            <span class="ts_prd">Keds 의 브랜드 시그니쳐</span>
+            <span class="today_txtp">트리플 캔버스</span>
+            <span class="txt_16">심플한 디자인이 매력적인 스니커즈</span>
+            <img src="images/star.png" alt="" class="star_img a">
+
+            <span class="txt_16 line_thr">18,000</span>
+            <p class="today_txtp">9,000<span class="won">원</span></p>
+
+            <div class="round50">
+              <p class="round50_p">50%</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="best">
+        <div class="best_bg">
+          <div class="best1660">
+            <em class="bg_tit">BEST</em>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="images/md_2.jpg" alt="" class="best_area">
+                  <strong class="prd_name">코듀로이 미니백 <img src="images/BEST.png" alt="" class="md_st">
+                    <img src="images/NEW.png" alt="" class="md_st"></strong>
+
+                  <span class="best_txt_sp">속부터 겉까지, 수분 가득 맑은 피부</span>
+                  <span class="txt_16 line_thr">18,000</span>
+                  <p class="today_txtp">9,000<span class="won">원</span></p>
+                </div>
+                <!-- 2번째 상품 -->
+                <div class="swiper-slide">
+                  <img src="images/keds_outer.jpg" alt="" class="best_area">
+
+                  <strong class="prd_name">
+                    챔피온 스트랩 메리제인 <img src="images/BEST.png" alt="" class="md_st">
+                    <img src="images/NEW.png" alt="" class="md_st">
+                  </strong>
+                  <span class="best_txt_sp">속부터 겉까지, 수분 가득 맑은 피부</span> <span class="prd_txt">79,000</span>
+                  <p class="nine">59,000</p>
+                  <span class="won">원</span>
+
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/keds_prd.jpg" alt="" class="best_area">
+
+                  <strong class="prd_name">
+                    트리플 캔버스 <img src="images/BEST.png" alt="" class="md_st">
+                    <img src="images/NEW.png" alt="" class="md_st">
+                  </strong>
+                  <span class="best_txt_sp">속부터 겉까지, 수분 가득 맑은 피부</span>
+                  <span class="prd_txt">79,000</span>
+                  <p class="nine">59,000</p>
+                  <span class="won">원</span>
+                </div>
+                <!-- 4번쨰 상품 -->
+
+                <div class="swiper-slide">
+
+                  <img src="images/keds_mdpick1.jpg" alt="" class="best_area">
+
+                  <strong class="prd_name">
+                    트리플 캔버스
+                    <img src="images/BEST.png" alt="" class="md_st">
+                    <img src="images/NEW.png" alt="" class="md_st">
+                  </strong>
+                  <span class="best_txt_sp">속부터 겉까지, 수분 가득 맑은 피부</span>
+                  <span class="prd_txt">79,000</span>
+                  <p class="nine">59,000</p>
+                  <span class="won">원</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="md">
+        <div class="md_txt">
+          <em class="md_em">MD’S PICK</em>
+          <p class="md_p">믿고 사는 케즈</p>
+        </div>
+
+        <div class="md_prd">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <img src="images/md_2.jpg" alt="" class="best_area">
+                <strong class="prd_name">코듀로이 미니백 <img src="images/BEST.png" alt="" class="md_st">
+                  <img src="images/NEW.png" alt="" class="md_st"></strong>
+
+                <span class="best_txt_sp">속부터 겉까지, 수분 가득 맑은 피부</span>
+                <span class="txt_16 line_thr">18,000</span>
+                <p class="today_txtp">9,000<span class="won">원</span></p>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="images/md_2.jpg" alt="" class="best_area">
+                <strong class="prd_name">코듀로이 미니백 <img src="images/BEST.png" alt="" class="md_st">
+                  <img src="images/NEW.png" alt="" class="md_st"></strong>
+
+                <span class="best_txt_sp">속부터 겉까지, 수분 가득 맑은 피부</span>
+                <span class="txt_16 line_thr">18,000</span>
+                <p class="today_txtp">9,000<span class="won">원</span></p>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="images/md_2.jpg" alt="" class="best_area">
+                <strong class="prd_name">코듀로이 미니백 <img src="images/BEST.png" alt="" class="md_st">
+                  <img src="images/NEW.png" alt="" class="md_st"></strong>
+
+                <span class="best_txt_sp">속부터 겉까지, 수분 가득 맑은 피부</span>
+                <span class="txt_16 line_thr">18,000</span>
+                <p class="today_txtp">9,000<span class="won">원</span></p>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="images/md_2.jpg" alt="" class="best_area">
+                <strong class="prd_name">코듀로이 미니백 <img src="images/BEST.png" alt="" class="md_st">
+                  <img src="images/NEW.png" alt="" class="md_st"></strong>
+
+                <span class="best_txt_sp">속부터 겉까지, 수분 가득 맑은 피부</span>
+                <span class="txt_16 line_thr">18,000</span>
+                <p class="today_txtp">9,000<span class="won">원</span></p>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="images/md_2.jpg" alt="" class="best_area">
+                <strong class="prd_name">코듀로이 미니백 <img src="images/BEST.png" alt="" class="md_st">
+                  <img src="images/NEW.png" alt="" class="md_st"></strong>
+
+                <span class="best_txt_sp">속부터 겉까지, 수분 가득 맑은 피부</span>
+                <span class="txt_16 line_thr">18,000</span>
+                <p class="today_txtp">9,000<span class="won">원</span></p>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="images/md_2.jpg" alt="" class="best_area">
+                <strong class="prd_name">코듀로이 미니백 <img src="images/BEST.png" alt="" class="md_st">
+                  <img src="images/NEW.png" alt="" class="md_st"></strong>
+
+                <span class="best_txt_sp">속부터 겉까지, 수분 가득 맑은 피부</span>
+                <p class="today_txtp">9,000<span class="won">원</span></p>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="images/md_2.jpg" alt="" class="best_area">
+                <strong class="prd_name">코듀로이 미니백 <img src="images/BEST.png" alt="" class="md_st">
+                  <img src="images/NEW.png" alt="" class="md_st"></strong>
+
+                <span class="best_txt_sp">속부터 겉까지, 수분 가득 맑은 피부</span>
+                <span class="txt_16 line_thr">18,000</span>
+                <p class="today_txtp">9,000<span class="won">원</span></p>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="images/md_2.jpg" alt="" class="best_area">
+                <strong class="prd_name">코듀로이 미니백 <img src="images/BEST.png" alt="" class="md_st">
+                  <img src="images/NEW.png" alt="" class="md_st"></strong>
+
+                <span class="best_txt_sp">속부터 겉까지, 수분 가득 맑은 피부</span>
+                <span class="txt_16 line_thr">18,000</span>
+                <p class="today_txtp">9,000<span class="won">원</span></p>
+              </div>
+
+            </div>
+
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+
+      </div>
+      <!-- md 끝 -->
+      <div class="face_wrap">
+        <div class="face_inner">
+          <div class="face">
+
+            <div class="fc left">
+              <img src="images/true.PNG" alt="">
+            </div>
+
+            <div class="fc right">
+              <p class="fc_p">세월이 흘러도 변치 않는 오리지널</p>
+              <em class="fc_em">Keds 의 시그니쳐 코어 모델</em>
+              <ul>
+                <li>#comfort</li>
+                <li>#심플</li>
+                <li>#안정감</li>
+              </ul>
+              <!--Swiper -->
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="prdimg">
+                      <img src="images/mini_prd.jpg" alt="">
+                    </div>
+
+                    <div class="facewash_txt">
+                      <em class="prd_if_em">트리플 캔버스</em>
+                      <i><span class="prd_icon">80%</span></i>
+                      <p class="prd_if_p">
+                        무료 배송 / 신규 1만원 쿠폰 / 무이자</p>
+                      ​
+                      <span class="prd_txt">59,000</span>
+                      <p class="nine fc">45,000 <span class="won">원</span></p>
+                    </div>
+
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="prdimg">
+                      <img src="images/mini_prd.jpg" alt="">
+                    </div>
+
+                    <div class="facewash_txt">
+                      <em class="prd_if_em">트리플 캔버스</em>
+                      <i><span class="prd_icon">80%</span></i>
+                      <p class="prd_if_p">
+                        무료 배송 / 신규 1만원 쿠폰 / 무이자</p>
+                      ​
+                      <span class="prd_txt">59,000</span>
+                      <p class="nine fc">45,000 <span class="won">원</span></p>
+                    </div>
+
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="prdimg">
+                      <img src="images/mini_prd.jpg" alt="">
+                    </div>
+
+                    <div class="facewash_txt">
+                      <em class="prd_if_em">트리플 캔버스</em>
+                      <i><span class="prd_icon">80%</span></i>
+                      <p class="prd_if_p">
+                        무료 배송 / 신규 1만원 쿠폰 / 무이자</p>
+                      ​
+                      <span class="prd_txt">59,000</span>
+                      <p class="nine fc">45,000 <span class="won">원</span></p>
+
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="prdimg">
+                      <img src="images/mini_prd.jpg" alt="">
+                    </div>
+
+                    <div class="facewash_txt">
+                      <em class="prd_if_em">트리플 캔버스</em>
+                      <i><span class="prd_icon">80%</span></i>
+                      <p class="prd_if_p">
+                        무료 배송 / 신규 1만원 쿠폰 / 무이자</p>
+                      ​
+                      <span class="prd_txt">59,000</span>
+                      <p class="nine fc">45,000 <span class="won">원</span></p>
+                    </div>
+
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="prdimg">
+                      <img src="images/mini_prd.jpg" alt="">
+                    </div>
+
+                    <div class="facewash_txt">
+                      <em class="prd_if_em">트리플 캔버스</em>
+                      <i><span class="prd_icon">80%</span></i>
+                      <p class="prd_if_p">
+                        무료 배송 / 신규 1만원 쿠폰 / 무이자
+                      </p>​
+                      <span class="prd_txt">59,000</span>
+                      <p class="nine fc">45,000 <span class="won">원</span></p>
+                    </div>
+
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="prdimg">
+                      <img src="images/mini_prd.jpg" alt="">
+                    </div>
+
+                    <div class="facewash_txt">
+                      <em class="prd_if_em">트리플 캔버스</em>
+                      <i><span class="prd_icon">80%</span></i>
+                      <p class="prd_if_p">
+                        무료 배송 / 신규 1만원 쿠폰 / 무이자</p>
+                      ​
+                      <span class="prd_txt">59,000</span>
+                      <p class="nine fc">45,000 <span class="won">원</span></p>
+
+                    </div>
+
+                  </div>
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Maymond N-Zone Face Wash 끝-->
+      <!-- 리뷰  -->
+      <div class="review">
+        <div class="rv_tit">
+          <em class="rv_em">REVIEW</em>
+        </div>
+
+        <div class="rv_main">
+          <div class="rv_prd">
+            <div class="rv_img">
+              <img src="images/gallery_6.jpg" alt="">
+            </div>
+
+            <div class="rv_text">
+              <p class="rv_p_tit">예전에 입어봤던 제품인데 그 때 너무 좋아서</p>
+              <span class="rv_p_span">예전에 입어봤던 제품인데 그 때 너무 좋아서 이번에
+                다시 구매했어요. 핏도 좋고 좋아요.
+                저번에 착용했을 때도 딱 이 핏이었어요 ...</span>
+            </div>
+
+            <div class="prd_detail">
+              <div class="det_img">
+                <img src="images/review1.jpg" alt="">
+              </div>
+
+              <div class="det_txt">
+                <span class="prd_n">Keds 맨투맨</span>
+                <span class="Prd_d">
+                  유니섹스 빅 로고 맨투맨입니다.</span>
+                <img src="images/star.png" alt="" class="star_img">
+                <span class="price">9,000원</span>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="rv_prd">
+            <div class="rv_img">
+              <img src="images/gallery_8.jpg" alt="">
+            </div>
+
+            <div class="rv_text">
+              <p class="rv_p_tit">예전에 입어봤던 제품인데 그 때 너무 좋아서</p>
+              <span class="rv_p_span">예전에 입어봤던 제품인데 그 때 너무 좋아서 이번에
+                다시 구매했어요. 핏도 좋고 좋아요.
+                저번에 착용했을 때도 딱 이 핏이었어요 ...</span>
+            </div>
+
+            <div class="prd_detail">
+              <div class="det_img">
+                <img src="images/review1.jpg" alt="">
+              </div>
+
+              <div class="det_txt">
+                <span class="prd_n">Keds 맨투맨</span>
+                <span class="Prd_d">
+                  유니섹스 빅 로고 맨투맨입니다.</span>
+                <img src="images/star.png" alt="" class="star_img">
+                <span class="price">9,000원</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="rv_prd">
+            <div class="rv_img">
+              <img src="images/gallery_13.jpg" alt="">
+            </div>
+
+            <div class="rv_text">
+              <p class="rv_p_tit">예전에 입어봤던 제품인데 그 때 너무 좋아서</p>
+              <span class="rv_p_span">예전에 입어봤던 제품인데 그 때 너무 좋아서 이번에
+                다시 구매했어요. 핏도 좋고 좋아요.
+                저번에 착용했을 때도 딱 이 핏이었어요 ...</span>
+            </div>
+
+            <div class="prd_detail">
+              <div class="det_img">
+                <img src="images/review1.jpg" alt="">
+              </div>
+
+              <div class="det_txt">
+                <span class="prd_n">Keds 맨투맨</span>
+                <span class="Prd_d">
+                  유니섹스 빅 로고 맨투맨입니다.</span>
+                <img src="images/star.png" alt="" class="star_img">
+                <span class="price">9,000원</span>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="rv_prd">
+            <div class="rv_img">
+              <img src="images/gallery_9.jpg" alt="">
+            </div>
+
+            <div class="rv_text">
+              <p class="rv_p_tit">예전에 입어봤던 제품인데 그 때 너무 좋아서</p>
+              <span class="rv_p_span">예전에 입어봤던 제품인데 그 때 너무 좋아서 이번에
+                다시 구매했어요. 핏도 좋고 좋아요.
+                저번에 착용했을 때도 딱 이 핏이었어요 ...</span>
+            </div>
+
+            <div class="prd_detail">
+              <div class="det_img">
+                <img src="images/review1.jpg" alt="">
+              </div>
+
+              <div class="det_txt">
+                <span class="prd_n">Keds 맨투맨</span>
+                <span class="Prd_d">
+                  유니섹스 빅 로고 맨투맨입니다.</span>
+                <img src="images/star.png" alt="" class="star_img">
+                <span class="price">9,000원</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- review 끝 -->
+      <div class="flw_wrap">
+        <div class="flw">
+          <div class="flw_tit">
+            <em class="flw__em">FOLLOW US</em>
+            <span class="flw__p">@keds</span>
+          </div>
+
+          <div class="flw_img">
+            <ul class="flw__ul">
+              <li><img src="images/ft_1.jpg" alt=""></li>
+              <li><img src="images/ft_2.jpg" alt=""></li>
+              <li><img src="images/ft_3.jpg" alt=""></li>
+              <li><img src="images/ft_4.jpg" alt=""></li>
+              <li><img src="images/ft_5.jpg" alt=""></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 컨테이너 끝 -->
+  </main>
+
+  <footer>
+    <div class="ft_wrap">
+      <div class="footer">
+        <div class="ft_1">
+          <div class="ft_1_top">
+            <ul>
+              <li>회사소개</li>
+              <li>서비스이용약관</li>
+              <li>개인정보처리방침</li>
+              <li>사업자정보확인</li>
+            </ul>
+          </div>
+
+          <div class="ft_1_bottom">
+            <p>경기도 김포시 고촌읍 태리로<br>
+              T. 1234-5678　F. 02-123-456　E. keds.com
+            </p>
+            <p class="ft3_p2"> COPYRIGHT KEDS ALL RIGHTS RESERVED</p>
+            <p class="ft3_p2">소비자피해 보증보험<br>
+              고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한<br>
+              구매안전서비스 소비자피해보증보험 서비스를 이용하실 수 있습니다.<br>
+              보증대상: 미배송, 반품/환불거부, 쇼핑몰 부도
+              보증보험 가입사실 확인하기</p><br>
+ 
+          </div>
+
+        </div>
+
+        <div class="ft_2">
+          <span class="ft2_span">회사명: 유한책임회사 케즈코리아<br>대표이사:홍길동<br>사업자 등록번호: 123-00-121343<br>
+            통신판매업 신고번호: 2013-서울강남-02918호 사업자정보확인 <br> 개인정보 책임자: 장성철
+            <br>주소: 경기도 김포시 고촌읍 태리로 21-1<br>E-mail 문의: Joy_Bang@vfc.com
+            고객센터(평일 09:00 ~ 18:00) 1522-1522<br>
+            ⓒ유한책임회사 케즈코리아. All Rights Reserved.<br>
+            California Transparency in Supply Chain Act of 2010<br></span>
+        </div>
+
+        <div class="ft_4">
+          <div class="ft3_p_inner">
+            <p class="ft3_p">ABOUT</p>
+            <span class="ft2_span">케즈에 대하여<br>
+              고객센터 </span>
+          </div>
+
+          <div class="ft3_p_inner">
+            <p class="ft3_p">LEGAL</p>
+            <span class="ft2_span">이용약관<br>
+              개인정보처리방침<br>
+              청소년 보호정책<br>
+            </span>
+          </div>
+
+          <div class="ft3_p_inner">
+            <p class="ft3_p">SHOPPING</p>
+            <span class="ft2_span">회원가입<br>
+              주문/배송 조회
+            </span>
+          </div>
+        </div>
+
+        <div class="ft_3">
+          <p class="ft3_p">NEWS LETTER</p>
+
+          <div class="news_area">
+            <p>Enter Email Address</p>
+          </div>
+
+
+
+        </div>
+      </div>
+
+      <div class="top_btn">
+
+        <i class="fas fa-arrow-down"></i>
+      </div>
+
+  </footer>
+
+
+
+</body>
+
+</html>
