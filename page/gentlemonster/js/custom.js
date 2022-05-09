@@ -36,7 +36,7 @@ $(function(){
   var contSection02 = new Swiper(".section01 .swiper-container", {
     spaceBetween:0,
     autoplay: {
-      delay: 3500,
+      delay: 6500,
       disableOnInteraction: false,
     }, 
     pagination: {
@@ -175,6 +175,7 @@ $(function(){
   $(".leftLayout").mouseenter(function() {
     $(this).stop().animate({width: "55%"});
     $(this).siblings(".rightLayout").stop().animate({width: "45%"});
+    // $(".leftLayout::before").stop().animate({height:"100%"},{opacity:"1"})
   });
   $(".leftLayout").mouseleave(function() {
     $(this).stop().animate({width: "50%"});
@@ -215,11 +216,11 @@ $("footer .ftFamily .siteButton").click(function(){
 
 // 모바일 햄버거 메뉴 내 하위메뉴
   $(".oneMenu1> .oneItem").click(function(){
-    var openMenu = $(this).parent().find("ul").outerHeight();
+    var openMenu = $(this).parent().find("ul:not(.twoItemsInner)").outerHeight();
 
     if($(this).hasClass("plus")){
       $(this).removeClass("plus");
-      $(this).parent().find("div").stop().animate({height:"0"});
+      $(this).parent().find("div:not(.twoItemsChild)").stop().animate({height:"0"});
       // $(".submenu").removeClass("plus")
   
     }
@@ -229,21 +230,27 @@ $("footer .ftFamily .siteButton").click(function(){
       $(".secMenuWrap").stop().animate({ height:"0"});
       // $("this").parent().find(".secMenuWrap").stop().animate({height:"0"});
       $(this).addClass("plus");
-      $(this).parent().find("div").stop().animate({ height: openMenu });
+      $(this).parent().find("div:not(.twoItemsChild").stop().animate({ height: openMenu });
     }
   });
 
-var windowWidth = $(window).width();
-  gsap.to(".section05 .videoWrap", {
-    scrollTrigger:{
-    trigger:".section05",
-    start:"top top",
-    end: "+=" + windowWidth,
-    scrub:1,
-    // markers: true,
-    pin:".section05",
-    },
-  width:0
+// 모바일 메뉴 아코디언 두번째 하위
+  $(".twoItems").click(function(){
+    var openTwoItems = $(this).parent().find("ul:not(.secMenuWrapHeight)").outerHeight();
+
+    if($(this).hasClass("showMenu")){
+      $(this).removeClass("showMenu");
+      $(this).parent().find("div:not(.secMenuWrap)").stop().animate({height:"0"});
+      // $(".submenu").removeClass("plus")
+    }
+    else{/*  console.log("ssdsd"); */
+      // $(this).addClass("plus");
+      // $(".submenu").removeClass("plus");
+      $(".twoItemsChild").stop().animate({ height:"0"});
+      // $("this").parent().find(".secMenuWrap").stop().animate({height:"0"});
+      $(this).addClass("showMenu");
+      $(this).parent().find("div:not(.secMenuWrap)").stop().animate({ height: openTwoItems });
+    }
   });
 
   var section06 = new Swiper(".section06.inner .swiper-container", {
@@ -260,15 +267,6 @@ var windowWidth = $(window).width();
       nextEl: ".section06.inner .swiper-button-next",
       prevEl: ".section06.inner .swiper-button-prev",
     },
-  });
-
-// // 콜라보레이션 카드 이미지
-  gsap.to(".section06.inner .collaborationMain", {
-    scrollTrigger: {
-      trigger: ".collaborationMain .swiper-container",
-    },
-    x: -200,
-    duration: 5,
   });
 
   // gsap 사용해서 타이틀 텍스트에 효과
