@@ -637,20 +637,50 @@ height: 100%;
 transition: 1s cubic-bezier(0.36, 0.14, 0, 1);
 z-index: 1;
 background: #fff;
+
 }
 
-.vid{width: 100%;  position: relative; height:1000px; margin: 0 auto; }
 
-.vid .videowrapper {
-  min-width: 1200px;
-  height:1000px;
-  }
-  
-.vid .videowrapper>iframe {
+main .vid_bg {
+  margin: 0% auto;
+  height: 1070px;
+  position: relative;
+  overflow: visible;
   width: 100%;
-  height: 100%;
-  }
+  margin-bottom: 10%;
 
+}
+
+.vid_bg>video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 1070px;
+
+}
+
+main .vid_bg .vid_txt {
+  display: block;
+  width: 100px;
+  position: absolute;
+  text-align: center;
+  bottom: 10%;
+  left: 50%;
+  transform: translateY(-50%);
+}
+
+main .vid_bg .vid_txt .vida_txt_wrap {
+  font-size: 30px;
+  color: red;
+}
+
+main .vid_bg .vid_txt .vida_txt_wrap:hover {
+  font-weight: blod;
+  transition: ease .5s;
+  color: #fff;
+}
 
 /* 스크롤에 따라 글자 움직이는 영역 */
 main .txt_01 {
